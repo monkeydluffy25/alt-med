@@ -14,7 +14,7 @@ export class SearchMedProvider{
   postsearchmeds(params)
   {
     console.log("provider-"+params);
-    return this.http.post('https://salty-caverns-34348.herokuapp.com/meds/search',
+    return this.http.post('https://pacific-bastion-89841.herokuapp.com/meds/search',
     {
       search: params
     })
