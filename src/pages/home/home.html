@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+
+       <button ion-button style="margin-left: -3%;text-align: right;" class="logout-btn" clear (click)="logout()">Logout</button>
+        <!-- <ion-title>Ionic Blank</ion-title> -->
+      <!--  <ion-grid>
+          <ion-row>
+            <ion-col col-6>aaa</ion-col>
+
+        <ion-col col-6><button ion-button style="margin-left: -10%;" class="logout-btn" block clear (click)="logout()">Logout</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>-->
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+<div>
+  <ion-searchbar (animate)="true" [(ngModel)]="in_drug" placeholder="Enter the name of a drug" [showCancelButton]="shouldShowCancel" style="background-color:white; width:115%; padding-top:21%; margin-left:0%;width:100%;"></ion-searchbar>
+<!-- <!<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar> -->
+</div>
+<div style="margin-top=-1%;">
+<button ion-button style="margin-left: 38%;margin-top: 2%;" (click)="getItems()">submit</button>
+</div>
+
+  <ion-list>
+    <button ion-item *ngFor= "let medicine of medicines" (click)=getItemsfull(medicine)>
+      {{medicine}}
+    </button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-navbar>
+    <ion-title>Sign Up</ion-title>
+</ion-navbar>
+<ion-item>
+  <ion-label color="primary" stacked>Name</ion-label>
+  <ion-input [(ngModel)]="user.name" type="text" placeholder="Enter your name"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="primary" stacked>Mobile number</ion-label>
+  <ion-input [(ngModel)]="user.mob" type="tel" placeholder="Enter your mobile number"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="primary" stacked>Email Id</ion-label>
+  <ion-input [(ngModel)]="user.email" type="email" placeholder="Enter your email id"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="primary" stacked>Username</ion-label>
+  <ion-input [(ngModel)]="user.username"type="text" placeholder="Enter your username"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="primary" stacked>Password</ion-label>
+  <ion-input [(ngModel)]="user.password"type="password" placeholder="Enter your password"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="primary" stacked>Address</ion-label>
+  <ion-input [(ngModel)]="user.add"type="text" placeholder="Enter your address"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="primary" stacked>Pincode</ion-label>
+  <ion-input [(ngModel)]="user.pin" type="tel" placeholder="Enter your pincode"></ion-input>
+</ion-item>
+
+<div style="margin-top:4%;">
+<button ion-button style="margin-left: 38%;margin-top: 2%;" (click)="details()">submit</button>
+</div>
