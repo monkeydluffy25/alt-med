@@ -11,12 +11,8 @@ app.use(methodOverride());
 app.use(cors());
 
 app.use(express.static('www'));
-app.set('port', process.env.PORT || 5000);
-app.listen(app.get('port'), function () {
-       console.log('Express server listening on port ' + app.get('port'));
-   });
 
-//app.listen(process.env.PORT || 8095);
+app.listen(process.env.PORT || 8095);
 //mongoose.connect("mongodb://localhost:27017/");
 
 var MongoClient = require('mongodb').MongoClient;
