@@ -13,7 +13,7 @@ export class SearchMedFullProvider{
   postsearchmedsfull(params)
   {
     console.log("provider-"+params);
-    return this.http.post('http://localhost:8095/meds/searchfull',
+    return this.http.post('https://salty-caverns-34348.herokuapp.com/meds/searchfull',
     {
       search: params
     })
