@@ -5,14 +5,18 @@ var methodOverride = require('method-override')
 var cors = require('cors');
 var app = express();
 //var mongoose = require('mongoose');                     // mongoose for mongodb
-
-
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(cors());
 
-app.listen(process.env.PORT || 8095);
+app.use(express.static('www'));
+app.set('port', process.env.PORT || 5000);
+app.listen(app.get('port'), function () {
+       console.log('Express server listening on port ' + app.get('port'));
+   });
+
+//app.listen(process.env.PORT || 8095);
 //mongoose.connect("mongodb://localhost:27017/");
 
 var MongoClient = require('mongodb').MongoClient;
