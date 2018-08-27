@@ -33,7 +33,7 @@
     "rxjs-compat": "^6.2.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18",
-    "morgan": "^1.9.0",
+    "morgan": "^1.2.2",
     "express": "^4.16.3",
     "json": "^9.0.6",
     "method-override": "^2.3.10",
